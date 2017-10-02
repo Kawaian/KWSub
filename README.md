@@ -1,5 +1,6 @@
 # KWSub
-## A **realtime** subtitle generator for anime by 이희준, Matyas Yves Constans
+## A **realtime** subtitle generator for anime
+By 이희준, 김진관, マチャス コンスタンス. 
 
 
 
