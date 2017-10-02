@@ -2,8 +2,6 @@
 ## A **realtime** subtitle generator for anime
 By 이희준, 김진관, マチャス コンスタンス. 
 
-
-
 ![](/Doc/Resources/welcome_image.png)
 
 # Feature Roadmap
