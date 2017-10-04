@@ -9,6 +9,6 @@ namespace SphinxSharp
     static class NativeMethods
     {
         // -- PInvoke configuration constants -- //
-        public const string DllExtern = "OpenCvSharpExtern";
+        public const string DllExtern = "SphinxWrap";
     }
 }
