@@ -33,7 +33,7 @@ class PocketSphinxPINVOKE {
     static ExceptionArgumentDelegate argumentNullDelegate = new ExceptionArgumentDelegate(SetPendingArgumentNullException);
     static ExceptionArgumentDelegate argumentOutOfRangeDelegate = new ExceptionArgumentDelegate(SetPendingArgumentOutOfRangeException);
 
-    [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="SWIGRegisterExceptionCallbacks_PocketSphinx")]
+    [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="SWIGRegisterExceptionCallbacks_PocketSphinx")]
     public static extern void SWIGRegisterExceptionCallbacks_PocketSphinx(
                                 ExceptionDelegate applicationDelegate,
                                 ExceptionDelegate arithmeticDelegate,
@@ -47,7 +47,7 @@ class PocketSphinxPINVOKE {
                                 ExceptionDelegate overflowDelegate, 
                                 ExceptionDelegate systemExceptionDelegate);
 
-    [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="SWIGRegisterExceptionArgumentCallbacks_PocketSphinx")]
+    [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="SWIGRegisterExceptionArgumentCallbacks_PocketSphinx")]
     public static extern void SWIGRegisterExceptionCallbacksArgument_PocketSphinx(
                                 ExceptionArgumentDelegate argumentDelegate,
                                 ExceptionArgumentDelegate argumentNullDelegate,
@@ -169,7 +169,7 @@ class PocketSphinxPINVOKE {
     public delegate string SWIGStringDelegate(string message);
     static SWIGStringDelegate stringDelegate = new SWIGStringDelegate(CreateString);
 
-    [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="SWIGRegisterStringCallback_PocketSphinx")]
+    [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="SWIGRegisterStringCallback_PocketSphinx")]
     public static extern void SWIGRegisterStringCallback_PocketSphinx(SWIGStringDelegate stringDelegate);
 
     static string CreateString(string cString) {
@@ -188,268 +188,268 @@ class PocketSphinxPINVOKE {
   }
 
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_hypstr_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_hypstr_set")]
   public static extern void Hypothesis_hypstr_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_hypstr_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_hypstr_get")]
   public static extern string Hypothesis_hypstr_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_best_score_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_best_score_set")]
   public static extern void Hypothesis_best_score_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_best_score_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_best_score_get")]
   public static extern int Hypothesis_best_score_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_prob_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_prob_set")]
   public static extern void Hypothesis_prob_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_prob_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Hypothesis_prob_get")]
   public static extern int Hypothesis_prob_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_Hypothesis")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_Hypothesis")]
   public static extern global::System.IntPtr new_Hypothesis(string jarg1, int jarg2, int jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_Hypothesis")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_Hypothesis")]
   public static extern void delete_Hypothesis(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_word_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_word_set")]
   public static extern void Segment_word_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_word_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_word_get")]
   public static extern string Segment_word_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_ascore_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_ascore_set")]
   public static extern void Segment_ascore_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_ascore_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_ascore_get")]
   public static extern int Segment_ascore_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lscore_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lscore_set")]
   public static extern void Segment_lscore_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lscore_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lscore_get")]
   public static extern int Segment_lscore_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lback_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lback_set")]
   public static extern void Segment_lback_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lback_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_lback_get")]
   public static extern int Segment_lback_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_prob_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_prob_set")]
   public static extern void Segment_prob_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_prob_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_prob_get")]
   public static extern int Segment_prob_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_start_frame_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_start_frame_set")]
   public static extern void Segment_start_frame_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_start_frame_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_start_frame_get")]
   public static extern int Segment_start_frame_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_end_frame_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_end_frame_set")]
   public static extern void Segment_end_frame_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_end_frame_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_end_frame_get")]
   public static extern int Segment_end_frame_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Segment_fromIter")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Segment_fromIter")]
   public static extern global::System.IntPtr Segment_fromIter(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_Segment")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_Segment")]
   public static extern void delete_Segment(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_Segment")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_Segment")]
   public static extern global::System.IntPtr new_Segment();
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBest_hypstr_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBest_hypstr_set")]
   public static extern void NBest_hypstr_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBest_hypstr_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBest_hypstr_get")]
   public static extern string NBest_hypstr_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBest_score_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBest_score_set")]
   public static extern void NBest_score_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBest_score_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBest_score_get")]
   public static extern int NBest_score_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBest_fromIter")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBest_fromIter")]
   public static extern global::System.IntPtr NBest_fromIter(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBest_hyp")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBest_hyp")]
   public static extern global::System.IntPtr NBest_hyp(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_NBest")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_NBest")]
   public static extern void delete_NBest(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_NBest")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_NBest")]
   public static extern global::System.IntPtr new_NBest();
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_SegmentIterator_ptr_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_SegmentIterator_ptr_set")]
   public static extern void SegmentIterator_ptr_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_SegmentIterator_ptr_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_SegmentIterator_ptr_get")]
   public static extern global::System.IntPtr SegmentIterator_ptr_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_SegmentIterator")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_SegmentIterator")]
   public static extern global::System.IntPtr new_SegmentIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_SegmentIterator")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_SegmentIterator")]
   public static extern void delete_SegmentIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBestIterator_ptr_set")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBestIterator_ptr_set")]
   public static extern void NBestIterator_ptr_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBestIterator_ptr_get")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBestIterator_ptr_get")]
   public static extern global::System.IntPtr NBestIterator_ptr_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_NBestIterator")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_NBestIterator")]
   public static extern global::System.IntPtr new_NBestIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_NBestIterator")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_NBestIterator")]
   public static extern void delete_NBestIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_Decoder__SWIG_0")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_Decoder__SWIG_0")]
   public static extern global::System.IntPtr new_Decoder__SWIG_0();
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_Decoder__SWIG_1")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_Decoder__SWIG_1")]
   public static extern global::System.IntPtr new_Decoder__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_Decoder")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_Decoder")]
   public static extern void delete_Decoder(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_reinit")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_reinit")]
   public static extern void Decoder_reinit(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_load_dict")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_load_dict")]
   public static extern void Decoder_load_dict(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3, string jarg4);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_save_dict")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_save_dict")]
   public static extern void Decoder_save_dict(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_add_word")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_add_word")]
   public static extern void Decoder_add_word(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3, int jarg4);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_lookup_word")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_lookup_word")]
   public static extern string Decoder_lookup_word(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_lattice")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_lattice")]
   public static extern global::System.IntPtr Decoder_get_lattice(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_config")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_config")]
   public static extern global::System.IntPtr Decoder_get_config(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_default_config")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_default_config")]
   public static extern global::System.IntPtr Decoder_default_config();
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_file_config")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_file_config")]
   public static extern global::System.IntPtr Decoder_file_config(string jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_start_stream")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_start_stream")]
   public static extern void Decoder_start_stream(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_start_utt")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_start_utt")]
   public static extern void Decoder_start_utt(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_end_utt")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_end_utt")]
   public static extern void Decoder_end_utt(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_process_raw")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_process_raw")]
   public static extern int Decoder_process_raw(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, bool jarg4, bool jarg5);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_hyp")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_hyp")]
   public static extern global::System.IntPtr Decoder_hyp(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_fe")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_fe")]
   public static extern global::System.IntPtr Decoder_get_fe(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_feat")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_feat")]
   public static extern global::System.IntPtr Decoder_get_feat(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_in_speech")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_in_speech")]
   public static extern bool Decoder_get_in_speech(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_fsg")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_fsg")]
   public static extern global::System.IntPtr Decoder_get_fsg(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_fsg")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_fsg")]
   public static extern void Decoder_set_fsg(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_jsgf_file")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_jsgf_file")]
   public static extern void Decoder_set_jsgf_file(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_jsgf_string")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_jsgf_string")]
   public static extern void Decoder_set_jsgf_string(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_kws")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_kws")]
   public static extern string Decoder_get_kws(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_kws")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_kws")]
   public static extern void Decoder_set_kws(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_keyphrase")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_keyphrase")]
   public static extern void Decoder_set_keyphrase(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_allphone_file")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_allphone_file")]
   public static extern void Decoder_set_allphone_file(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_lm")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_lm")]
   public static extern global::System.IntPtr Decoder_get_lm(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_lm")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_lm")]
   public static extern void Decoder_set_lm(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_lm_file")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_lm_file")]
   public static extern void Decoder_set_lm_file(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_logmath")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_logmath")]
   public static extern global::System.IntPtr Decoder_get_logmath(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_search")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_set_search")]
   public static extern void Decoder_set_search(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_unset_search")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_unset_search")]
   public static extern void Decoder_unset_search(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_search")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_get_search")]
   public static extern string Decoder_get_search(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_n_frames")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_n_frames")]
   public static extern int Decoder_n_frames(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_seg")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_seg")]
   public static extern global::System.IntPtr Decoder_seg(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_nbest")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Decoder_nbest")]
   public static extern global::System.IntPtr Decoder_nbest(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_Lattice__SWIG_0")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_Lattice__SWIG_0")]
   public static extern global::System.IntPtr new_Lattice__SWIG_0(string jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_new_Lattice__SWIG_1")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_new_Lattice__SWIG_1")]
   public static extern global::System.IntPtr new_Lattice__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_Lattice")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_Lattice")]
   public static extern void delete_Lattice(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Lattice_write")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Lattice_write")]
   public static extern void Lattice_write(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_Lattice_write_htk")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_Lattice_write_htk")]
   public static extern void Lattice_write_htk(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_NBestList___iter__")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_NBestList___iter__")]
   public static extern global::System.IntPtr NBestList___iter__(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_NBestList")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_NBestList")]
   public static extern void delete_NBestList(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_SegmentList___iter__")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_SegmentList___iter__")]
   public static extern global::System.IntPtr SegmentList___iter__(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("SphinxNative.dll", EntryPoint="CSharp_Pocketsphinx_delete_SegmentList")]
+  [global::System.Runtime.InteropServices.DllImport("SphinxWrap.dll", EntryPoint="CSharp_Pocketsphinx_delete_SegmentList")]
   public static extern void delete_SegmentList(global::System.Runtime.InteropServices.HandleRef jarg1);
 }
 

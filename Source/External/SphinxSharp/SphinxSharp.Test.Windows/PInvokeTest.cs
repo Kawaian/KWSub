@@ -4,7 +4,7 @@ using System.IO;
 
 namespace SphinxSharp.Test.Windows
 {
-    class Program
+    class PInvokeTest
     {
         static void Main(string[] args)
         {
