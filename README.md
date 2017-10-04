@@ -9,3 +9,6 @@ By 이희준, 김진관, マチャス コンスタンス.
 - [ ] Custom font rendering
 - [ ] Neural net based character detection
 - [ ] Android support
+
+# Fixme
+- [ ] Move wrappers from SphinxSharp.Windows to SphynxSharp. This requires modifying the swig wrappers.
