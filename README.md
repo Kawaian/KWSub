@@ -10,7 +10,7 @@ By 이희준, 김진관, マチャス コンスタンス.
 - [ ] Neural net based character detection
 - [ ] Android support
 
-# Fixme
+# Global FIXME list
 - [ ] Move wrappers from SphinxSharp.Windows to SphynxSharp. This requires modifying the swig wrappers.
 
 # Awesome tools that were used
