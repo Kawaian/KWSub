@@ -100,14 +100,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\SphinxNative.Windows\bin\Win32\Release\SphinxNative.Base.dll">
+      <Link>SphinxNative.Base.dll</Link>
+    </Content>
+    <Content Include="..\SphinxNative.Windows\bin\Win32\Release\SphinxNative.dll">
+      <Link>SphinxNative.dll</Link>
+    </Content>
     <Content Include="..\SphinxWrap.Windows\bin\Win32\Release\SphinxWrap.Base.dll">
-      <Link>SharedNative\SphinxWrap.Base.dll</Link>
+      <Link>SphinxWrap.Base.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\SphinxWrap.Windows\bin\Win32\Release\SphinxWrap.dll">
-      <Link>SharedNative\SphinxWrap.dll</Link>
+      <Link>SphinxWrap.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

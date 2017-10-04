@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="pocketsphinx_wrap.c" />
+    <ClCompile Include="sphinxbase_wrap.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SphinxNative.Windows\SphinxNative.Base.Windows.vcxproj">
@@ -146,9 +147,6 @@
     </ProjectReference>
     <ProjectReference Include="..\SphinxNative.Windows\SphinxNative.Windows.vcxproj">
       <Project>{a0e555b2-8a4b-4724-8174-0cc1256e8074}</Project>
-    </ProjectReference>
-    <ProjectReference Include="SphinxWrap.Base.Windows.vcxproj">
-      <Project>{950e1d89-f6c5-4150-ade3-0f8976180765}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
