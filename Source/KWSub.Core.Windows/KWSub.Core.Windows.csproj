@@ -44,7 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Source\KWSub.Core\KWSub.Core.csproj">
+    <ProjectReference Include="..\KWSub.Core\KWSub.Core.csproj">
       <Project>{07ce823d-9df4-49e8-9fe1-c2b8be417843}</Project>
       <Name>KWSub.Core</Name>
     </ProjectReference>
