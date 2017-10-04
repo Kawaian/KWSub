@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KWSub.Core\KWSub.Core.csproj">
-      <Project>{07ce823d-9df4-49e8-9fe1-c2b8be417843}</Project>
+      <Project>{de0e1af2-a5ed-408a-84c3-f90a2887d76b}</Project>
       <Name>KWSub.Core</Name>
     </ProjectReference>
   </ItemGroup>
