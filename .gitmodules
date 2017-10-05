@@ -1,0 +1,3 @@
+[submodule "Source/External/SphinxSharp"]
+	path = Source/External/SphinxSharp
+	url = https://github.com/Kawaian/SphinxSharp.git

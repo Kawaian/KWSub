@@ -13,7 +13,5 @@ namespace KWSub.Core
             // LZ4 is the default compressor on windows
             return new Compressors.LZ4Compressor();
         }
-
-
     }
 }

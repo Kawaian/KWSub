@@ -12,5 +12,4 @@ namespace KWSub.Core
         void    WriteData(Stream outputStream, byte[] data);
         byte[]  ReadData(Stream inputStream);
     }
-
 }
